@@ -63,7 +63,7 @@ class ReadDataset:
                 word = self.stem.stem(word)
 
                 if word in self.stop_words:
-                    break
+                    continue
 
                 if word not in self.wtoi:
                     data.append(self.wtoi['<UNK>'])
